@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Chatbot Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <form id="signupForm" action="/dashboard" method="post">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <label>
+        <input type="checkbox" required> I agree to the Terms and Privacy Policy
+      </label>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Log In</a></p>
+      <p id="error-message" style="color: red; display: none;">Please enter a valid email address.</p>
+    </form>
+  </div>
+</body>
+</html>
